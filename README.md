@@ -1,1 +1,1 @@
-This repo is a collection of documentation.
+This repo is a collection of documentation. Everything herein can be used, modified, and redistributed freely without attribution.
