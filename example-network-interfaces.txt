@@ -1,0 +1,29 @@
+# Ubuntu Server 16.04
+# /etc/network/interfaces
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# Primary network interface
+# Motherboard NIC
+
+auto eth0
+iface eth0 inet static
+#iface eth0 inet dhcp
+    address 10.10.11.102
+    netmask 255.255.255.0
+    gateway 0.0.0.0
+    # network 10.10.11.0
+    # broadcast 10.10.11.255
+
+# Secondary network interface
+# USB ethernet adapter/dongle
+# PCI NIC
+
+#auto eth1
+#iface eth1 inet dhcp
