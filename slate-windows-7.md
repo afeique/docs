@@ -69,15 +69,29 @@ The `bundler` gem is required to resolve and install Slate's other gem dependenc
 
 Navigate to the directory you cloned Slate into.
 
-### Change `nokogiri` Version in Gemfile
+### Change Gemfile
 
-As of this writing, the `nokogiri` version specified in Slate's `Gemfile` resolves to a version incompatible with Ruby 2.4.x. To fix this problem, open Slate's `Gemfile` and change the following line:
+#### Set `nokogiri` to `~> 1.8.1`
+
+As of this writing, the `nokogiri` version specified in Slate's `Gemfile` resolves to a version incompatible with Ruby 2.4.x _on Windows_ (this problem does not seem to exist in Linux). To fix this problem, open Slate's `Gemfile` and change the following line:
 
     gem 'nokogiri', '~> 1.6.8'
 
 to:
 
     gem 'nokogiri', '~> 1.8.1'
+
+#### (optional) Add `wdm >= 0.1.0`
+
+When running the `middleman` server using `bundle exec` on Windows, the following message appears:
+
+    == The Middleman is loading
+      Please add the following to your Gemfile to avoid polling for changes:
+        gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+To avoid this message, do as suggested and add the following line to the Slate `Gemfile`:
+
+    gem 'wdm', '>= 0.1.0'
 
 ### `bundle` Install
 
