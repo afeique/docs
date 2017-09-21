@@ -93,10 +93,6 @@ Simply edit `source/index.html.md` in the Slate directory. While in the top-leve
 
     $ bundle exec middleman build --clean
 
-Alternatively, simply run `deploy.sh`:
-
-    $ ./deploy.sh
-
 ## Rendered Output
 
 View `build/index.html`.
