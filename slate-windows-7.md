@@ -34,7 +34,7 @@ In the shell, update the package database and core system packages using:
 
     $ pacman -Syu
 
-When asked, close the shell or force-quit. Reopen the shell and finish updating:
+If prompted to do so, close the shell or force-quit. Reopen the shell and finish updating:
 
     $ pacman -Su
 
