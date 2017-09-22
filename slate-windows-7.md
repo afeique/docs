@@ -18,7 +18,7 @@ Though Slate isn't officially supported on Windows 7, it is still possible to ru
 
 ## Node.js Setup
 
-Node.js is a necessary dependency for JavaScript execution. Install the appropriate version using one of the [Node.js downloads](https://nodejs.org/en/download/). Make sure to select to add `node` and `npm` to the PATH.
+Node.js is a convenient engine for JavaScript execution (other engines can be used). Install the appropriate version using one of the [Node.js downloads](https://nodejs.org/en/download/). Make sure to select to add `node` and `npm` to your system `PATH`.
 
 ## Ruby Setup
 
