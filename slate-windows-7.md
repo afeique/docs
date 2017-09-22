@@ -34,7 +34,7 @@ In the shell, update the package database and core system packages using:
 
     $ pacman -Syu
 
-If prompted to do so, close the shell or force-quit. Reopen the shell and finish updating:
+If prompted to do so, close the shell or force-quit. Reopen the `msys2.exe` shell and finish updating:
 
     $ pacman -Su
 
